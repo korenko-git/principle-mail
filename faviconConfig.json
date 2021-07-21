@@ -1,0 +1,21 @@
+{
+  "appName": "Nedra",
+  "appShortName": "Nedra",
+  "appDescription": "Бурение скважин под ключ Воронеж",
+  "background": "#020307",
+  "start_url": "/",
+  "version": 1.0,
+  "logging": false,
+  "pipeHTML": true,
+  "replace": true,
+  "icons": {
+    "android": false,
+    "appleIcon": false,
+    "appleStartup": false,
+    "coast": false,
+    "favicons": true,
+    "firefox": false,
+    "windows": false,
+    "yandex": true
+  }
+}

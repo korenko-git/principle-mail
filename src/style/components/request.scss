@@ -1,0 +1,7 @@
+@import "./media_mixin.scss";
+
+#request{
+  @include media-before-pc {
+    margin-bottom: 64px;
+  }
+}

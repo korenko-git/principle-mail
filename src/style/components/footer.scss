@@ -1,0 +1,52 @@
+@import "./media_mixin.scss";
+@import "./wave_mixin.scss";
+
+.footer {
+  clear:both;
+  padding-top:20px;
+  padding: 40px 0;
+  color: #fff;
+  background: #1f2d41;
+  
+  .waves {
+    margin-top: -215px;   
+    @include wavesColored(#1f2d41);
+
+    @include media-phone {
+      margin-top: -143px;
+    }
+  }
+
+  .container {
+    margin-top: -55px;
+  }
+
+  .col-heading {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #3d7ecc;
+    font-weight: 500;
+    margin: 1rem 0;
+    padding: .4rem 0px;
+    border-bottom: 1px solid #c7c7c7; 
+    letter-spacing: 3px;
+  }
+
+  ul { 
+    list-style: none; 
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    line-height: 1.8;
+
+    &:hover{
+      color: #4a90e2;
+      font-weight: 500;
+    }
+  }
+}
+

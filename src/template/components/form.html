@@ -1,0 +1,29 @@
+<form class="forms">
+  @@h2
+
+  <div class="form-group pt-3">
+    <label for="@@inputNameID">Ваше имя:</label>
+    <input 
+      type="text" 
+      class="form-control" 
+      id="@@inputNameID" 
+      placeholder="Введите ваше имя" 
+      name="name" 
+      required>
+  </div>
+
+  <div class="form-group">
+    <label for="@@inputPhoneID">Ваша почта:</label>
+    <input 
+      type="text"                   
+      class="form-control" 
+      id="@@inputPhoneID" 
+      placeholder="Введите адрес вашей почты" 
+      name="mail" 
+      required>
+  </div>
+
+  <button type="submit" class="btn @@btnClass w-100">Подписаться</button>
+  <input type="hidden" name="formname" value="@@formName">
+
+</form>     

@@ -1,0 +1,12 @@
+@import "./media_mixin.scss";
+
+.nav-pills .nav-link.active {
+  color: #fff !important;
+}
+
+@include media-pc {
+  .navbar-nav .nav-link {
+    padding-right: 8px;
+    padding-left: 8px; 
+  }
+}

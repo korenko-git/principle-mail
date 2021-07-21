@@ -1,0 +1,28 @@
+.owl-dots {
+  text-align: center;
+}
+
+.owl-dots .owl-dot {
+  width: 15px;
+  height: 15px;
+  margin: 0 3px;
+  background-color: #ccc !important;
+  display: inline-block;
+  -webkit-border-radius: 10em;
+  border-radius: 10em
+}
+
+.owl-dots .owl-dot.active {
+  background-color: #ed111a !important
+}
+
+.slide h3 {
+  color: #ed111a;
+  text-transform: uppercase;
+}
+
+.owl-dots .owl-nav {
+  position: absolute;
+  top: 12%;
+  width: 100%
+}

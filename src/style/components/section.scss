@@ -1,0 +1,14 @@
+section {
+  background-color: #191516;
+  color: #fff;
+  padding: 2rem 0;
+  display: block;
+
+  height:100%;
+  width:100%;
+}
+
+section:nth-child(odd), section:first-child {
+  background-color: #fff !important;
+  color: #191516;
+}

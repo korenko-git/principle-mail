@@ -1,0 +1,13 @@
+@import "./media_mixin.scss";
+
+#aboutImage {
+  max-width: 100%;
+
+  @include media-pc {  
+    height: 100%;  
+  }
+  
+  @include media-phone {
+    width: 100%;
+  }
+}

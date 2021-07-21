@@ -1,0 +1,23 @@
+@import "bootstrap/scss/bootstrap-reboot"; 
+@import "./media_mixin.scss";
+
+html, body { 
+  @include media-pc {
+    height:100%;
+    width:100%;
+  }
+}
+
+h2 {
+  font-size: 34px;
+  line-height: 40px;
+
+  @include media-phone {
+    text-align: center;
+  }
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}

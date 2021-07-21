@@ -1,0 +1,24 @@
+@import "./base.scss";
+
+@import "aos/dist/aos";
+@import "owl.carousel/dist/assets/owl.carousel";
+
+@import "bootstrap/scss/bootstrap-grid"; 
+@import "bootstrap/scss/_transitions"; 
+@import "bootstrap/scss/_buttons"; 
+@import "bootstrap/scss/_forms"; 
+
+@import "bootstrap/scss/utilities/_background"; 
+@import "bootstrap/scss/utilities/_position"; 
+@import "bootstrap/scss/utilities/_sizing"; 
+@import "bootstrap/scss/utilities/_text"; 
+
+@import "./components/navigation.scss";
+@import "./components/header.scss";
+@import "./components/owl-carousel.scss";
+
+@import "./components/section.scss";
+@import "./components/about.scss";
+@import "./components/videoWrapper.scss";
+@import "./components/request.scss";
+@import "./components/footer.scss";
