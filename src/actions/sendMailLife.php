@@ -62,7 +62,7 @@ while($user = $resultUsers->fetch_object()) {
   } catch (Exception $e) {
     echo '<br>Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
   }
-  sleep(10);
+  sleep(1);
 }
 
 

@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "gulp",
     "build": "gulp build",
-    "clean": "gulp clean"
+    "clean": "gulp clean",
+    "deploy": "gh-pages -d dist"
   },
   "author": "",
   "license": "ISC",
@@ -20,6 +21,7 @@
     "del": "^5.1.0",
     "eslint": "^7.19.0",
     "eslint-config-google": "^0.14.0",
+    "gh-pages": "^3.2.3",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-babel": "^8.0.0",
