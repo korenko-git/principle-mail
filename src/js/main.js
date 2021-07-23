@@ -28,8 +28,9 @@ $(document).ready(function() {
 
     $.ajax({
       type: 'POST',
-      url: 'https://depict-site.ho.ua/actions/subscribe.php',
+      url: 'http://depict-site.ho.ua/actions/subscribe.php',
       crossDomain: true,
+      dataType: 'jsonp', 
       // eslint-disable-next-line no-invalid-this
       data: $(this).serialize(),
     }).done(function() {
