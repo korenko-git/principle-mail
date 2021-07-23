@@ -4,8 +4,8 @@ require_once '../vendor/autoload.php';
 use Classes\DB;
 use Classes\Utils;
 
-$name = Utils::secure_read($_POST["name"]);
-$mail = Utils::secure_read($_POST["mail"]);
+$name = Utils::secure_read($_GET["name"]);
+$mail = Utils::secure_read($_GET["mail"]);
 
 DB::init();
 
