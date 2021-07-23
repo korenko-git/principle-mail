@@ -28,7 +28,7 @@ $(document).ready(function() {
 
     $.ajax({
       type: 'POST',
-      url: 'actions/subscribe.php',
+      url: 'https://depict-site.ho.ua/actions/subscribe.php',
       // eslint-disable-next-line no-invalid-this
       data: $(this).serialize(),
     }).done(function() {
