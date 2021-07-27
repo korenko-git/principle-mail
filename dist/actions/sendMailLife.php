@@ -1,5 +1,7 @@
 <?php
-require_once '../vendor/autoload.php';
+require_once(dirname(__FILE__).'/../vendor/autoload.php');
+require_once(dirname(__FILE__).'/getImage/index.php');
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 use Classes\Principle;
@@ -10,7 +12,6 @@ if ($day_of_week > 5) return;
 
 Principle::$activePrinciple = "life";
 ['title_rus' => $title_rus, 'title_eng' => $title_eng]  = Principle::getActivePrinciple();
-require_once './getImage/index.php';
 
 $mail = new PHPMailer(true);
 $mail->isHTML(true); 
@@ -19,11 +20,11 @@ $mail->isSendmail();
 
 $mail->Subject = "Принципы | Рей Далио";
 $mail->AltBody = "Рей Далио | Принципы";
-$mail->AddEmbeddedImage("./$title_eng.eng.png", 'principleENG'); 
-$mail->AddEmbeddedImage("./$title_eng.rus.png", 'principleRUS'); 
+$mail->AddEmbeddedImage(dirname(__FILE__)."/$title_eng.eng.png", 'principleENG'); 
+$mail->AddEmbeddedImage(dirname(__FILE__)."/$title_eng.rus.png", 'principleRUS'); 
 $mail->Encoding = 'base64';		
 
-$template = file_get_contents("./template.html");
+$template = file_get_contents(dirname(__FILE__)."/template.html");
 $fromReplace = array(
   "{{imageSrcEng}}",
   "{{imageSrcRus}}",

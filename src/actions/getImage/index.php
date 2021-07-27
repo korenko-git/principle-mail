@@ -1,7 +1,7 @@
 <?php
 //header('Content-Type: image/png');
 //require_once '../../vendor/autoload.php';
-require_once "imagettftextboxopt.php";
+require_once(dirname(__FILE__).'/imagettftextboxopt.php');
 use Classes\DB;
 use Classes\Principle;
 use Classes\Theme;
@@ -80,7 +80,7 @@ foreach ($langs as $lang) {
   //echo trim(preg_replace('/\s+/', ' ', strtoupper($textPrinciple[$lang])));
 
   // output image
-  imagepng($dest_image, "$title_eng.$lang.png");
+  imagepng($dest_image, dirname(__FILE__)."/$title_eng.$lang.png");
 
   // destroy all images
   //imagedestroy($bgImage);
