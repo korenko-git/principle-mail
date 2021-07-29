@@ -1,6 +1,5 @@
 <?php
 require_once(dirname(__FILE__).'/../vendor/autoload.php');
-require_once(dirname(__FILE__).'/getImage/index.php');
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -11,6 +10,7 @@ $day_of_week = date('N');
 if ($day_of_week > 5) return;
 
 Principle::$activePrinciple = "life";
+require_once(dirname(__FILE__).'/getImage/index.php');
 ['title_rus' => $title_rus, 'title_eng' => $title_eng]  = Principle::getActivePrinciple();
 
 $mail = new PHPMailer(true);
