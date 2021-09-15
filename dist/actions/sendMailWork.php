@@ -20,8 +20,8 @@ $mail->isSendmail();
 
 $mail->Subject = "Принципы | Рей Далио";
 $mail->AltBody = "Рей Далио | Принципы";
-$mail->AddEmbeddedImage(dirname(__FILE__)."/$title_eng.eng.png", 'principleENG'); 
-$mail->AddEmbeddedImage(dirname(__FILE__)."/$title_eng.rus.png", 'principleRUS'); 
+$mail->AddEmbeddedImage(dirname(__FILE__)."/getImage/$title_eng.eng.png", 'principleENG'); 
+$mail->AddEmbeddedImage(dirname(__FILE__)."/getImage/$title_eng.rus.png", 'principleRUS'); 
 $mail->Encoding = 'base64';		
 
 $template = file_get_contents(dirname(__FILE__)."/template.html");
