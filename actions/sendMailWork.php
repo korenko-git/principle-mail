@@ -1,6 +1,5 @@
 <?php
 require_once(dirname(__FILE__).'/../vendor/autoload.php');
-require_once(dirname(__FILE__).'/getImage/index.php');
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -11,6 +10,7 @@ $day_of_week = date('N');
 if ($day_of_week > 5) return;
 
 Principle::$activePrinciple = "work";
+require_once(dirname(__FILE__).'/getImage/index.php');
 ['title_rus' => $title_rus, 'title_eng' => $title_eng]  = Principle::getActivePrinciple();
 
 $mail = new PHPMailer(true);
@@ -20,8 +20,8 @@ $mail->isSendmail();
 
 $mail->Subject = "Принципы | Рей Далио";
 $mail->AltBody = "Рей Далио | Принципы";
-$mail->AddEmbeddedImage(dirname(__FILE__)."/$title_eng.eng.png", 'principleENG'); 
-$mail->AddEmbeddedImage(dirname(__FILE__)."/$title_eng.rus.png", 'principleRUS'); 
+$mail->AddEmbeddedImage(dirname(__FILE__)."/getImage/$title_eng.eng.png", 'principleENG'); 
+$mail->AddEmbeddedImage(dirname(__FILE__)."/getImage/$title_eng.rus.png", 'principleRUS'); 
 $mail->Encoding = 'base64';		
 
 $template = file_get_contents(dirname(__FILE__)."/template.html");
