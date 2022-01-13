@@ -74,9 +74,9 @@ class Principle {
     $fistDayOfWeek = +date('N',strtotime(date('Y-01-01')));
     $selectedDayOfWeek = +date('N', $selectedDate);
 
-    $workDayOfFirstWeek = 5 - $fistDayOfWeek >= 0? 6 - $fistDayOfWeek:0;
-    $workDayOfBetweenWeek = ($weekOfYear - 2) * 5;
-    $workDayOfSelectedWeek = 5 - $selectedDayOfWeek >= 0? $selectedDayOfWeek:5;
+    $workDayOfFirstWeek = 5 - $fistDayOfWeek >= 0 ? 6 - $fistDayOfWeek : 0;
+    $workDayOfBetweenWeek = $weekOfYear > 1 ? ($weekOfYear - 2) * 5 : 0;
+    $workDayOfSelectedWeek = 5 - $selectedDayOfWeek >= 0 ? $selectedDayOfWeek : 5;
 
     $workDayOfSelectedDate = $workDayOfFirstWeek + $workDayOfBetweenWeek + $workDayOfSelectedWeek;
 
